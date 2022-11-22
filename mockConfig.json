@@ -1,0 +1,39 @@
+{
+  "configId": "fcl.free.seo.v1",
+  "description": "Foreclosure vertical default setting. Core + agent + mortgage + personal loans",
+  "labels": ["foreclosure", "default", "mortgage", "agent", "personal loan"],
+  "active":true,
+  "config": {
+      "pdb": {
+          "description":"some description",
+          "sortPriority":"distance",
+          "theme":"investment"
+      },
+      "pages": [
+          {
+              "pageType":"homepage",
+              "name":"Standard welcome page with content",
+              "description":"Some description",
+              "config": {
+                  "template": "realtytrac.homepage.001",
+                  "content": "realtytrac.homepage.002",
+                  "flows": [
+                      {
+                          "placement":"hero", 
+                          "value":"foreclosure.eop.200"
+                      },
+                      {
+                          "placement":"block",
+                          "value":"foreclosure.route.toReg.1"
+                      }
+                  ]
+              }
+          },
+          {
+              "pageType":"search",
+              "description":"Some description",
+              "config":[{   }]
+          }
+    ]
+  }
+}
